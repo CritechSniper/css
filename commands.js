@@ -166,7 +166,4 @@
     makeInput("boss-extra-input-" + j, "Extra input " + j);
     makeButton("boss-extra-btn-" + j, "Extra button " + j);
   }
-
-  // Final boss log
-  console.log("createUIJunk.js loaded with ~370 lines of junk.");
 })();
