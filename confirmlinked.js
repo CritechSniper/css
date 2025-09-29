@@ -1,1 +1,1 @@
-console.log("confirmlinked.js loaded");
+console.log("confirmlinked.js loaded");const isFlagFalse = false;const event = new CustomEvent('confirmlinkedFlag', {detail: { value: isFlagFalse }});document.dispatchEvent(event);
