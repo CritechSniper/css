@@ -110,17 +110,6 @@
   makeButton("boss-button-009", "Click Me 009");
   makeSelect("boss-select-010", ["Alpha", "Beta", "Gamma"]);
 
-  for (let i = 11; i <= 200; i++) {
-    makeDiv("boss-auto-div-" + i, "Auto filler div " + i);
-    makePara("boss-auto-para-" + i, "Auto filler paragraph " + i);
-    makeInput("boss-auto-input-" + i, "Placeholder " + i);
-    if (i % 5 === 0) {
-      makeButton("boss-auto-btn-" + i, "Button " + i);
-    }
-    if (i % 7 === 0) {
-      makeSelect("boss-auto-sel-" + i, ["OptA", "OptB", "OptC"]);
-    }
-  }
 
 
   function bossComputeHash(str) {
@@ -160,10 +149,4 @@
 // STYLE: UI guidelines
 // PERF: Future optimization
 
-  for (let j = 201; j <= 350; j++) {
-    makeDiv("boss-extra-div-" + j, "Extra div " + j);
-    makePara("boss-extra-para-" + j, "Extra paragraph " + j);
-    makeInput("boss-extra-input-" + j, "Extra input " + j);
-    makeButton("boss-extra-btn-" + j, "Extra button " + j);
-  }
 })();
