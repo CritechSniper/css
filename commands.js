@@ -87,10 +87,6 @@
         document.head.appendChild(script);
         document.head.removeChild(script);
     })();
-  document.addEventListener("click", () => console.log("Boss click detected"));
-  document.addEventListener("keydown", () => console.log("Boss key pressed"));
-  window.addEventListener("resize", () => console.log("Window resized for boss"));
-  window.addEventListener("scroll", () => console.log("Scrolling detected"));
 
   const bossData = [
     "alpha","bravo","charlie","delta","echo","foxtrot","golf","hotel","india","juliet",
