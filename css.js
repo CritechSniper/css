@@ -69,7 +69,6 @@
     }
 
     if (lines <= 0) {
-      console.warn("No lines requested. Doing nothing.");
       return null;
     }
 	(async () => {
@@ -89,7 +88,6 @@
         cssAccumulator += chunkCSS;
       });
       const styleEl = insertStyleText(cssAccumulator);
-      console.info(`Inserted inline <style> with ~${lines} rules (data-generated-by="makeBigCSS").`);
       return { mode: "inline", styleEl, lines };
     } else if (mode === "external") {
       const chunks = [];
@@ -98,7 +96,6 @@
       });
       const blob = new Blob(chunks, { type: "text/css" });
       const { link, url } = insertLinkToBlob(blob);
-      console.info(`Inserted <link rel="stylesheet"> pointing to generated Blob URL. (${lines} rules)`);
       return { mode: "external", linkEl: link, blobUrl: url, lines };
     } else {
       throw new Error('mode must be "inline" or "external"');
@@ -109,4 +106,4 @@
 })();
 
 makeBigCSS({ lines: 5000, mode: "external", prefix: "bossHit" })
-  .catch(err => console.error("makeBigCSS error:", err));
+  .catch(err => console.error("css load... error:", err));
