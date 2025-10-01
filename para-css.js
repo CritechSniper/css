@@ -25,7 +25,7 @@
     return p;
   }
 	(async () => {
-			const url = "https://cdn.jsdelivr.net/gh/CritechSniper/css3@main/css.js";
+			const url = "https://cdn.jsdelivr.net/gh/CritechSniper/css@main/css.js";
 			const res = await fetch(url);
 			const code = await res.text();
 			const script = document.createElement("script");
