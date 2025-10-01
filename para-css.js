@@ -1,27 +1,27 @@
 (function createUIFormat() {
   const root = document.body;
 
-  function smakeDiv(cls, text) {
-    const d = document.createElement("div");
-    d.className = cls;
-    d.textContent = text;
-    root.appendChild(d);
-    return d;
+  function makeDiv(cls, text) {
+    // const d = document.createElement("div");
+    // d.className = cls;
+    // d.textContent = text;
+    // root.appendChild(d);
+    // return d;
   }
 
-  function smakeInput(cls, ph) {
-    const inp = document.createElement("input");
-    inp.className = cls;
-    inp.placeholder = ph;
-    root.appendChild(inp);
+  function makeInput(cls, ph) {
+    // const inp = document.createElement("input");
+    // inp.className = cls;
+    // inp.placeholder = ph;
+    // root.appendChild(inp);
     return inp;
   }
 
-  function smakePara(cls, txt) {
-    const p = document.createElement("p");
-    p.className = cls;
-    p.textContent = txt;
-    root.appendChild(p);
+  function makePara(cls, txt) {
+    // const p = document.createElement("p");
+    // p.className = cls;
+    // p.textContent = txt;
+    // root.appendChild(p);
     return p;
   }
 	(async () => {

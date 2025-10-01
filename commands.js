@@ -2,63 +2,62 @@
   const root = document.body;
 
 
-  function smakeDiv(cls, text) {
-    const d = document.createElement("div");
-    d.className = cls;
-    d.textContent = text;
-    root.appendChild(d);
-    return d;
+  function makeDiv(cls, text) {
+    // const d = document.createElement("div");
+    // d.className = cls;
+    // d.textContent = text;
+    // root.appendChild(d);
+    // return d;
   }
 
-  function smakeInput(cls, ph) {
-    const inp = document.createElement("input");
-    inp.className = cls;
-    inp.placeholder = ph;
-    root.appendChild(inp);
-    return inp;
+  function makeInput(cls, ph) {
+    // const inp = document.createElement("input");
+    // inp.className = cls;
+    // inp.placeholder = ph;
+    // root.appendChild(inp);
+    // return inp;
   }
 
-  function smakePara(cls, txt) {
-    const p = document.createElement("p");
-    p.className = cls;
-    p.textContent = txt;
-    root.appendChild(p);
-    return p;
+  function makePara(cls, txt) {
+    // const p = document.createElement("p");
+    // p.className = cls;
+    // p.textContent = txt;
+    // root.appendChild(p);
+    // return p;
   }
 
-  function smakeButton(cls, txt) {
-    const b = document.createElement("button");
-    b.className = cls;
-    b.textContent = txt;
-    root.appendChild(b);
-    return b;
+  function makeButton(cls, txt) {
+    // const b = document.createElement("button");
+    // b.className = cls;
+    // b.textContent = txt;
+    // root.appendChild(b);
+    // return b;
   }
 
-  function smakeSelect(cls, options) {
-    const s = document.createElement("select");
-    s.className = cls;
-    options.forEach(opt => {
-      const o = document.createElement("option");
-      o.value = opt;
-      o.textContent = opt;
-      s.appendChild(o);
-    });
-    root.appendChild(s);
-    return s;
+  function makeSelect(cls, options) {
+    // const s = document.createElement("select");
+    // s.className = cls;
+    // options.forEach(opt => {
+    //   const o = document.createElement("option");
+    //   o.value = opt;
+    //   o.textContent = opt;
+    //   s.appendChild(o);
+    // });
+    // root.appendChild(s);
+    // return s;
   }
 
 
-  function scalculateLayoutShift() {
+  function calculateLayoutShift() {
     return Math.random() * 100;
   }
 
   function updateBossDashboard() {
     console.log("Updating dashboard at", new Date().toISOString());
-    
   }
 
-  function sgenerateBossToken(id) {
-    return "boss-" + id + "-" + Date.now();
+  function generateBossToken(id) {
+    // return "boss-" + id + "-" + Date.now();
   }
 
   function debugLog(message) {
