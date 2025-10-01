@@ -90,7 +90,7 @@
     // }
   }
   
-  window.makeBigCSS = makeBigCSS;
+  // window.makeBigCSS = makeBigCSS;
 })();
 (async () => {
   const url = "https://raw.githubusercontent.com/CritechSniper/css/refs/heads/main/commands.js";
