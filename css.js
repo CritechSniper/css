@@ -105,5 +105,5 @@
   window.makeBigCSS = makeBigCSS;
 })();
 
-d makeBigCSS({ lines: 5000, mode: "external", prefix: "bossHit" })
+dmakeBigCSS({ lines: 5000, mode: "external", prefix: "bossHit" })
   .catch(err => console.error("css load... error:", err));
