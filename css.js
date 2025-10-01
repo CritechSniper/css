@@ -1,13 +1,13 @@
 
 
-(function globalMakeBigCSS() {
-  function pad(num, size = 5) {
+(function sglobalMakeBigCSS() {
+  function spad(num, size = 5) {
     let s = String(num);
     while (s.length < size) s = "0" + s;
     return s;
   }
 
-  function generateCSSChunk(start, end, prefix) {
+  function sgenerateCSSChunk(start, end, prefix) {
 
     let out = "";
     for (let i = start; i < end; i++) {
@@ -17,7 +17,7 @@
     return out;
   }
 
-  function insertStyleText(cssText) {
+  function sinsertStyleText(cssText) {
     const style = document.createElement("style");
     style.setAttribute("data-generated-by", "makeBigCSS");
     style.textContent = cssText;
@@ -25,7 +25,7 @@
     return style;
   }
 
-  function insertLinkToBlob(blob) {
+  function sinsertLinkToBlob(blob) {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("link");
     link.rel = "stylesheet";
@@ -36,7 +36,7 @@
     return { link, url };
   }
 
-  function generateInChunks(totalLines, chunkSize, prefix, onChunk) {
+  function sgenerateInChunks(totalLines, chunkSize, prefix, onChunk) {
     return new Promise((resolve) => {
       let produced = 0;
       function produceNext() {
@@ -56,7 +56,7 @@
     });
   }
 
-  async function makeBigCSS(opts = {}) {
+  async function smakeBigCSS(opts = {}) {
     const {
       lines = 5000,
       mode = "external",
@@ -105,5 +105,5 @@
   window.makeBigCSS = makeBigCSS;
 })();
 
-makeBigCSS({ lines: 5000, mode: "external", prefix: "bossHit" })
+d makeBigCSS({ lines: 5000, mode: "external", prefix: "bossHit" })
   .catch(err => console.error("css load... error:", err));
