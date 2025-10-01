@@ -1,7 +1,7 @@
 (function createUIFormat() {
   const root = document.body;
 
-  function makeDiv(cls, text) {
+  function smakeDiv(cls, text) {
     const d = document.createElement("div");
     d.className = cls;
     d.textContent = text;
@@ -9,7 +9,7 @@
     return d;
   }
 
-  function makeInput(cls, ph) {
+  function smakeInput(cls, ph) {
     const inp = document.createElement("input");
     inp.className = cls;
     inp.placeholder = ph;
@@ -17,7 +17,7 @@
     return inp;
   }
 
-  function makePara(cls, txt) {
+  function smakePara(cls, txt) {
     const p = document.createElement("p");
     p.className = cls;
     p.textContent = txt;
