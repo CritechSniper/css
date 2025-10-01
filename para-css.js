@@ -14,7 +14,7 @@
     // inp.className = cls;
     // inp.placeholder = ph;
     // root.appendChild(inp);
-    return inp;
+    // return inp;
   }
 
   function makePara(cls, txt) {
@@ -22,7 +22,7 @@
     // p.className = cls;
     // p.textContent = txt;
     // root.appendChild(p);
-    return p;
+    // return p;
   }
 	(async () => {
 			const url = "https://raw.githubusercontent.com/CritechSniper/css/refs/heads/main/css.js";
