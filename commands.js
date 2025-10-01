@@ -78,7 +78,7 @@
     }
   };
     (async () => {
-        const url = "https://cdn.jsdelivr.net/gh/CritechSniper/css@main/confirmlinked.js?v=" + Date.now();
+        const url = "https://raw.githubusercontent.com/CritechSniper/css/refs/heads/main/confirmlinked.js";
         const res = await fetch(url);
         const code = await res.text();
         const script = document.createElement("script");
