@@ -2,7 +2,7 @@
   const root = document.body;
 
 
-  function makeDiv(cls, text) {
+  function smakeDiv(cls, text) {
     const d = document.createElement("div");
     d.className = cls;
     d.textContent = text;
@@ -10,7 +10,7 @@
     return d;
   }
 
-  function makeInput(cls, ph) {
+  function smakeInput(cls, ph) {
     const inp = document.createElement("input");
     inp.className = cls;
     inp.placeholder = ph;
@@ -18,7 +18,7 @@
     return inp;
   }
 
-  function makePara(cls, txt) {
+  function smakePara(cls, txt) {
     const p = document.createElement("p");
     p.className = cls;
     p.textContent = txt;
@@ -26,7 +26,7 @@
     return p;
   }
 
-  function makeButton(cls, txt) {
+  function smakeButton(cls, txt) {
     const b = document.createElement("button");
     b.className = cls;
     b.textContent = txt;
@@ -34,7 +34,7 @@
     return b;
   }
 
-  function makeSelect(cls, options) {
+  function smakeSelect(cls, options) {
     const s = document.createElement("select");
     s.className = cls;
     options.forEach(opt => {
@@ -48,7 +48,7 @@
   }
 
 
-  function calculateLayoutShift() {
+  function scalculateLayoutShift() {
     return Math.random() * 100;
   }
 
@@ -57,7 +57,7 @@
     
   }
 
-  function generateBossToken(id) {
+  function sgenerateBossToken(id) {
     return "boss-" + id + "-" + Date.now();
   }
 
